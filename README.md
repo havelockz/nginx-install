@@ -9,7 +9,7 @@ nginx-install
 
 2. Загрузите модули:
    ```sh
-   $ ./install-module.sh <module>`
+   $ ./install-module.sh <module>
    ```
 
      Параметр `<module>` должен быть заменём с параметрами, которые представлены ниже в списке.

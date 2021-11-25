@@ -1,36 +1,34 @@
-nginx-installer
+nginx-install
 ===============
-This installer is a bash script written to ease the compiling process of custom nginx installs with additional patches and/or modules. It will download the specified nginx version provided, apply any patches and/or modules available at runtime, and begin the compile and install process.
 
-### Usage
-1. Clone the repo.
+### Использование
+1. Скопируйте репозиторий.
     ```
     $ git clone https://github.com/havelockz/nginx-install.git
     ```
 
-2. Download Modules
+2. Загрузите модули
    ```
    $ ./install-module.sh <module>`
    ```
 
-     The `<module>` parameter should be replaced with the name of a module in the list below.
+     Параметр `<module>` должен быть заменём с параметрами, которые представлены ниже в списке.
 
-3. Apply Patches
-   1. Create a `patches` directory.
+3. Применить изминения
+   1. Создать директорию `patches`.
   	  ```
       $ mkdir -p patches
       ```
-   2. Store all patches in the `patches` directory.
+   2. Поместить все патчи в директории `patches`.
 
-4. Install!
+4. Установить!
    ```
    $ sudo ./install-nginx.sh <version>
    ```
 
-   The `<version>` parameter should be replaced with the actual version number of nginx you wish to compile and install. For example, `$ sudo ./install-nginx 1.5.10` would compile and install **nginx 1.5.10** onto your server.
+   Параметр `<version>` должен быть заменён с актуальной версией nginx, которую Вы хотите скачать и установить. Например, `$ sudo ./install-nginx 1.5.10` скачает и установит **nginx 1.5.10** на Ваш сервер.
 
-### List of Installable Modules
-This is an extensive list of modules that can be retrieved with the included script which will be applied to the installation automatically. If you have any requests, feel free to contribute or ask.
+### Список модулей доступных к установке
 
 - **ngx_brotli** ~ Google https://github.com/google/ngx_brotli/
 - **ngx_cache_purge** ~ FRiCKLE https://github.com/FRiCKLE/ngx_cache_purge/
